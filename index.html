@@ -10,7 +10,7 @@
 
     body { 
       font-family: "Oxygen", sans-serif;
-      background-color: #F3F5F6;
+      background-color: black;
       padding-left: 100px;
       padding-right: 100px;
   .oxygen-light {
@@ -40,7 +40,7 @@
         }
         
         .headline {
-            color: #831D17;
+            color: #F2F2F2;
             flex: 1;
         }
         
@@ -68,14 +68,14 @@
         }
         
         .text-highlight {
-            color: #484846;
+            color: #CECECE;
             font-size: 47px;
         }
         
         .text-container {
-            background-color: #DEDEDE;
+            background-color: #262626;
             padding: 8px;
-            color: #484846;
+            color: #CECECE;
             font-weight: 600;
         }
         
@@ -98,12 +98,22 @@
         
         .legal-content {
             padding: 8px;
+			justify-content: center;
+			display: flex;
         }
         
         .legal-text {
             margin-right: 16px;
         }
-
+		.bottom-links {
+			padding: 8px;
+			justify-content: center;
+			gap: 32px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+.live-clock {
+color: #FFFFFF
     }
   
   </style>
@@ -132,8 +142,22 @@
       <a href="/news.html">Read the news!</a><br>
       <a href="/discord.html">Join my Server!</a><br>
   </div>
+  Time in Germany:
+  <div id="live-clock"></div>
+  <script>
+  function updateClock() {
+    const now = new Date();
+    document.getElementById('live-clock').innerHTML = now.toLocaleTimeString();
+  }
+  // Update the clock every 1000 milliseconds (1 second)
+  setInterval(updateClock, 100);
+</script>
+
       <div class="legal-content">
-        <span class="legal-text">© 2025 - Aspi-San</span> | <a href="https://youtube.com/@theaspihd">YouTube</a> | <a href="https://github.com/@theaspihd">GitHub</a> | <a href="https://discord.gg/sAWXt3bf9Y">Discord</a>
+        <span class="legal-text">© 2026 - Aspi-San</span><br>
+		</div>
+		<div class="bottom-links">
+		<a href="https://youtube.com/@theaspihd">YouTube</a>		<a href="https://github.com/@theaspihd">GitHub</a>		<a href="https://discord.gg/sAWXt3bf9Y">Discord</a>
     </div>
 </body>
 
