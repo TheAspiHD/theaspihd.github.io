@@ -45,11 +45,23 @@
             justify-content: space-between;
             align-items: center;
         }
+        .nav-container {
+          font-family: "Oxygen", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            background-color: #262626;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
         
         a {
             color: #ff9ff6;
             text-decoration: none;
-            margin-left: 16px;
+            /* margin-left: 16px;*/
             font-weight: 700;
         }
         
@@ -69,10 +81,9 @@
             font-weight: 600;
         }
         
-        .maps-container {
-            margin-top: 16px;
+        .center-me {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
         }
         
         .maps-right {
@@ -104,4 +115,5 @@
 		}
 .live-clock {
 color: #FFFFFF
-    }
+        }
+}
