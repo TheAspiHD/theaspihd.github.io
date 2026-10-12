@@ -85,6 +85,10 @@
             display: flex;
             justify-content: center;
         }
+        .right-me {
+            display: flex;
+            justify-content: right;
+        }
         
         .maps-right {
             margin-left: 16px;
@@ -105,6 +109,11 @@
         
         .legal-text {
             margin-right: 16px;
+            color: #CECECE;
+            font-weight: 1000;
+            display: flex;
+            justify-content: center;
+            text-emphasis-color: green;
         }
 		.bottom-links {
 			padding: 8px;
@@ -113,7 +122,33 @@
 			display: flex;
 			flex-wrap: wrap;
 		}
-.live-clock {
-color: #FFFFFF
+        .live-clock {
+        color: white;
+        }
+        .info {
+            justify-content: left;
+            display: flex;
+        }
+        .top-banner {
+            background-color: #262626;
+            padding: 0px;
+            color: #CECECE;
+            font-weight: 800;
+            justify-content: center;
+            display: flex;
+            font-size: larger;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            padding: 0px;
+        }
+        .container div {
+            border: 1px solid white;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            background-color: #262626;
         }
 }
